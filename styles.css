@@ -4,31 +4,51 @@ body{
     margin: 0;
     padding: 0;
 }
-div#TitleSection{
-    background-color: blue;
-    padding-left: 15px;
-    padding-top: 45%;
-    padding-bottom: 45%;
-    width:65%;
-
-    
-    
-}
-div#TextTitlePart{
-
-}
-div#Menu{
-   
-    text-align: right;
-    
-    
-}
-div{
-    display: inline-block;
-}
 p{
     margin-top: 0;
 }
+
+
+/*PAINEL PRINCIPAL*/
 div#main{
-    background-image: url(/fundoAzulCortado.png);
+    background-image: url(img/fundoAzulCortado.png);
+    background-attachment: fixed;
+    background-size:contain;
+    background-repeat: no-repeat;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    
+}
+div#Menu, div#TitleSection{
+    display: inline-block;
+}
+div#TitleSection{
+    padding-top: 7%;
+    padding-left: 15%;
+    padding-right: 15%;
+    color: white;
+    position: absolute;
+
+}
+div#TitleSection h1{
+    font: Arial;
+    font-size: 40pt; 
+}
+div#TitleSection p{
+    
+    font: Arial;
+    font-size: 20pt; 
+}
+div#Menu{
+    padding-left: 70%;
+    padding-right: 10%;
+
+}
+
+div#Menu ul li{
+    text-decoration: none;
+    list-style-type: none;
+    margin-bottom: 20%;
+    font-size: 25px;
+    font-weight: bold;
 }
