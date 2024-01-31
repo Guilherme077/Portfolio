@@ -1,0 +1,109 @@
+/* Reset de estilos para garantir uma base consistente */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+  
+  body {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+    background-color: #1c1c1c;
+    background-image: url("img/wallpaper.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+  }
+  
+  .window {
+    position: absolute;
+    background-color: #686ac8a8;
+    border: 1px solid #00000077;
+    border-radius: 6px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    padding: 0px;
+    width: 600px;
+    height: 400px;
+    margin-top: 0px;
+  }
+  
+  /* Estilizando os botões de fechar, minimizar e maximizar */
+  .window .title-bar {
+    background-color: #ffffff00;
+    padding: 0px 10px 7px;
+    border: 0px;
+    margin: 0px;
+    cursor: move;
+  }
+  
+  .window .title-bar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  /* Estilizando os botões de fechar, minimizar e maximizar quando passa o mouse */
+  .window .title-bar button:hover {
+    background-color: #818181;
+  }
+
+  .close{
+    
+  }
+  
+  .minimize{
+    
+  }
+  .adjust{
+    
+  }
+  
+  /* Estilo para os controles da janela (minimizar, maximizar, fechar) */
+  .window .controls {
+    display:inline;
+    align-items: center;
+    padding: 0;
+    
+  }
+  
+  .window .controls button {
+    background: none;
+    border:#cfcfcf solid 1px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 0px;
+    margin-left: 0;
+    margin-top: 0;
+    border-top: 0;
+    width: 30px;
+    height: 15px;
+    font-size: 12px;
+    color: #cfcfcf;
+  }
+
+  .window .content{
+    background-color: white;
+    color: #000;
+    height: 365px;
+    margin: 0px 10px 10px;
+    
+  }
+  
+  /* Adicionando alguns estilos para a barra de status na parte inferior */
+  .status-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(100, 100, 100, 0.401);
+    padding: 12px;
+    text-align: right;
+  }
+ 
