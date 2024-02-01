@@ -7,7 +7,7 @@
   <title>Windows 7 Simulator</title>
 </head>
 <body>
-    <div class="window">
+    <div class="window" id="window1">
         <div class="title-bar">
           Sobre mim
           <div class="controls">
@@ -27,7 +27,7 @@
       <div class="window">
         <div class="title-bar">
             
-                Projetos
+                Bem vindo!
             
           
           <div class="controls">
@@ -38,13 +38,26 @@
         </div>
         <div class="content">
           <!-- Conteúdo da janela aqui -->
-          <p>Conteúdo da janela... <br>Conteúdo da janela... <br>Conteúdo da janela... <br>Conteúdo da janela...</p>
+          <p>Esta é uma versão divertida do meu portfolio. Para ver a versão profissional, clique aqui. <br> <br> Para começar, clique no botão inferior direito e clique para abrir uma janela desejada. <br> Você pode mover as janelas clicando e arrastando, além de conseguir fechar elas novamente.</p>
         </div>
+      </div>
+
+      <!-- Menu Iniciar -->
+      <div class="start-menu">
+        <button class="menu-btn" id="menubtn1">Portfolio Profissional</button>
+        <button class="menu-btn" id="menubtn2">Sobre Mim</button>
+        <button class="menu-btn" id="menubtn3">Projetos</button>
+        <button class="menu-btn" id="menubtn4">Formação Acadêmica</button>
+        <button class="menu-btn" id="menubtn5">Qualificação</button>
+        <button class="menu-btn" id="menubtn6">Habilidades</button>
+        <button class="menu-btn" id="menubtn7">Contato Profissional</button>
       </div>
     
       <!-- Barra de status -->
       <div class="status-bar">
-        00:00
+        <button id="start-btn"></button>
+        
+        <p class="showtime">00:00</p>
       </div>
   <script src="script.js"></script>
 </body>

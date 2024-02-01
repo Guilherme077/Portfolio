@@ -22,15 +22,18 @@
   
   .window {
     position: absolute;
-    background-color: #686ac8a8;
-    border: 1px solid #00000077;
+    border: 1px solid #0000004f;
     border-radius: 6px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     padding: 0px;
     width: 600px;
     height: 400px;
     margin-top: 0px;
-  }
+    background: rgb(107,139,180);
+    background: linear-gradient(90deg, rgba(107,139,180,0.8) 0%, rgba(26,81,137,0.8033264331123074) 50%, rgba(107,139,180,0.8) 100%);
+    }
+
+  
   
   /* Estilizando os botões de fechar, minimizar e maximizar */
   .window .title-bar {
@@ -51,25 +54,16 @@
   
   /* Estilizando os botões de fechar, minimizar e maximizar quando passa o mouse */
   .window .title-bar button:hover {
-    background-color: #818181;
+    background-color: rgb(129, 129, 129, 0.6); 
   }
 
-  .close{
-    
-  }
-  
-  .minimize{
-    
-  }
-  .adjust{
-    
-  }
   
   /* Estilo para os controles da janela (minimizar, maximizar, fechar) */
   .window .controls {
     display:inline;
     align-items: center;
     padding: 0;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
     
   }
   
@@ -93,6 +87,7 @@
     color: #000;
     height: 365px;
     margin: 0px 10px 10px;
+    padding: 7px;
     
   }
   
@@ -105,5 +100,50 @@
     background-color: rgba(100, 100, 100, 0.401);
     padding: 12px;
     text-align: right;
+    display: grid;
+  }
+  .showtime{
+    display: grid;
+    text-align: right;
+    place-items: right;
+  }
+  button#start-btn {
+    position:absolute;
+    display: grid;
+    width: 40px;
+    height: 40px;
+    place-items: left;
+    margin: 0px 10px;
+    margin-bottom: 30px;
+    background-image: url("img/StartBtn.png");
+    background-color: #1d232a00; 
+    border: none;
+  }
+  .window .title-bar .close:hover{
+    background-color: rgba(255, 65, 65, 0.6);
+  }
+
+  .start-menu{
+    position: fixed;
+    background-color: rgba(52, 88, 105, 0.605);
+    bottom: 42px;
+    left: 0;
+    width: 300px;
+    height: 400px;
+    z-index: 10;
+    display: none;
+  }
+  .menu-btn{
+    background-color: #1d232a00; 
+    border: none;
+    width: 300px;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+
+  }
+  .menu-btn:hover{
+    background-color: #1381ffa0; 
+    
   }
  
