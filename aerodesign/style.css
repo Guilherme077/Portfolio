@@ -119,8 +119,11 @@
     background-color: #1d232a00; 
     border: none;
   }
-  .window .title-bar .close:hover{
+  .window .title-bar .close{
     background-color: rgba(255, 65, 65, 0.6);
+  }
+  .window .title-bar .close:hover{
+    background-color: rgba(248, 17, 17, 0.729);
   }
 
   .start-menu{

@@ -51,6 +51,24 @@ div#Menu ul li{
     margin-bottom: 20%;
     font-size: 25px;
     font-weight: bold;
+    text-decoration-style: none;
+    
+}
+
+div#Menu ul li a{
+    
+        text-decoration: none;
+        list-style-type: none;
+        margin-bottom: 20%;
+        font-size: 25px;
+        font-weight: bold;
+        text-decoration-style: none;
+        color: black;
+        
+    
+}
+#aerobtn{
+    color: rgb(0, 200, 255);
 }
 
 /*BREVE RESUMO*/

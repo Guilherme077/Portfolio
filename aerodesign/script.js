@@ -6,15 +6,17 @@ const startbtn = document.querySelector('#start-btn');
 const startmenu = document.querySelector('.start-menu');
 const menubtn0 = document.querySelector('#menubtn0');
 const window1 = document.querySelector('#window1');
-const menubtn1 = document.querySelector('#menubtn0');
-const window2 = document.querySelector('#window1');
-const menubtn2 = document.querySelector('#menubtn0');
-const window3 = document.querySelector('#window1');
-const menubtn3 = document.querySelector('#menubtn0');
-const window4 = document.querySelector('#window1');
-const menubtn4 = document.querySelector('#menubtn0');
-const window5 = document.querySelector('#window1');
-const menubtn5 = document.querySelector('#menubtn0');
+const menubtn1 = document.querySelector('#menubtn1');
+const window2 = document.querySelector('#window2');
+const menubtn2 = document.querySelector('#menubtn2');
+const window3 = document.querySelector('#window3');
+const menubtn3 = document.querySelector('#menubtn3');
+const window4 = document.querySelector('#window4');
+const menubtn4 = document.querySelector('#menubtn4');
+const window5 = document.querySelector('#window5');
+const menubtn5 = document.querySelector('#menubtn5');
+const window6 = document.querySelector('#window6');
+const menubtn6 = document.querySelector('#menubtn6');
 var id = null;
 
 //HORA
@@ -22,12 +24,21 @@ function sysTime(){
     var Data = new Date();
     var hora = Data.getHours();
     var min = Data.getMinutes();
-    document.querySelector('.showtime').innerHTML = hora + ':' + min;
+    var dia = Data.getDate();
+    var mes = Data.getMonth();
+    var ano = Data.getFullYear(); 
+    document.querySelector('.showtime').innerHTML = dia + '/' + (mes+1) + '/' + ano + '  ' + hora + ':' + min;
 }
 setInterval(sysTime, 1000);
 sysTime();
 
 startmenu.style.display = 'none'; // Certifica que o menu está fechado
+window1.style.display = 'none';
+window2.style.display = 'none';
+window3.style.display = 'none';
+window4.style.display = 'none';
+window5.style.display = 'none';
+window6.style.display = 'none';
 
 //BOTAO DE FECHAR
 closebtn.forEach(button => {
@@ -66,6 +77,11 @@ menubtn4.addEventListener('click', () => {
 menubtn5.addEventListener('click', () => {
     if(window5.style.display == 'none'){
         window5.style.display = 'block';
+    }
+});
+menubtn6.addEventListener('click', () => {
+    if(window6.style.display == 'none'){
+        window6.style.display = 'block';
     }
 });
 
