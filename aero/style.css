@@ -19,7 +19,7 @@
     background-size: cover;
     color: #fff;
   }
-  
+  /* Estilo das Janelas*/
   .window {
     position: absolute;
     border: 1px solid #0000004f;
@@ -81,7 +81,14 @@
     font-size: 12px;
     color: #cfcfcf;
   }
-
+  /* Botão de fechar janelas*/
+  .window .title-bar .close{
+    background-color: rgba(255, 65, 65, 0.6);
+  }
+  .window .title-bar .close:hover{
+    background-color: rgba(248, 17, 17, 0.729);
+  }
+  /* Estilo da parte branca das janelas*/
   .window .content{
     background-color: white;
     color: #000;
@@ -102,11 +109,13 @@
     text-align: right;
     display: grid;
   }
+  /* Hora e data*/
   .showtime{
     display: grid;
     text-align: right;
     place-items: right;
   }
+  /* Botão Iniciar*/
   button#start-btn {
     position:absolute;
     display: grid;
@@ -119,13 +128,8 @@
     background-color: #1d232a00; 
     border: none;
   }
-  .window .title-bar .close{
-    background-color: rgba(255, 65, 65, 0.6);
-  }
-  .window .title-bar .close:hover{
-    background-color: rgba(248, 17, 17, 0.729);
-  }
-
+  
+  /*Menu Iniciar*/
   .start-menu{
     position: fixed;
     background-color: rgba(53, 90, 108, 0.779);
@@ -137,6 +141,8 @@
     border-radius: 6px;
     
   }
+
+  /* Parte branca do menu iniciar*/
   .apps-menu{
     background-color: white;
     width: 260px;
@@ -147,13 +153,14 @@
     padding: 10px;
     
   }
+  /* Parte lateral do menu iniciar*/
   .system-menu{
     background-color: rgba(226, 0, 0, 0);
     width: 50px;
     height: 350px;
     display: inline-block;
   }
-
+  /* Botões da area lateral do menu iniciar*/
   .menu-btn{
     background-color: #1d232a00; 
     border: none;
@@ -162,16 +169,23 @@
     text-align: center;
     font-size: 15px;
     color: white;
+    text-align: left;
     border-radius: 6px;
-    margin-top: 20px;
+    margin-top: 30px;
   }
+  .menu-btn:hover{
+    background-color: #4f739aaf; 
+    
+  }
+  /* Botões da area interna do menu iniciar*/
   .app-btn{
     background-color: #1d232a00; 
     border: none;
     height: 40px;
     text-align: center;
-    font-size: 15px;
+    font-size: 14px;
     width: 100%;
+    margin-bottom: 20px;
     text-align: left;
     display: flex;
     align-items: center;

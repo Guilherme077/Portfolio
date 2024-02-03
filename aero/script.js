@@ -18,16 +18,16 @@ const menubtn5 = document.querySelector('#menubtn5');
 const window6 = document.querySelector('#window6');
 const menubtn6 = document.querySelector('#menubtn6');
 var id = null;
-
+var destaque;
 //HORA
-function sysTime(){
+function sysTime() {
     var Data = new Date();
     var hora = Data.getHours();
     var min = Data.getMinutes();
     var dia = Data.getDate();
     var mes = Data.getMonth();
-    var ano = Data.getFullYear(); 
-    document.querySelector('.showtime').innerHTML = dia + '/' + (mes+1) + '/' + ano + '  ' + hora + ':' + min;
+    var ano = Data.getFullYear();
+    document.querySelector('.showtime').innerHTML = dia + '/' + (mes + 1) + '/' + ano + '  ' + hora + ':' + min;
 }
 setInterval(sysTime, 1000);
 sysTime();
@@ -55,71 +55,90 @@ menubtn0.addEventListener('click', () => {
     window.location = 'http://guilhermepmoreira.com';
 });
 menubtn1.addEventListener('click', () => {
-    if(window1.style.display == 'none'){
+    if (window1.style.display == 'none') {
         window1.style.display = 'block';
+        window1.style.zIndex = 6;
     }
 });
 menubtn2.addEventListener('click', () => {
-    if(window2.style.display == 'none'){
+    if (window2.style.display == 'none') {
         window2.style.display = 'block';
+        window2.style.zIndex = 6;
     }
 });
 menubtn3.addEventListener('click', () => {
-    if(window3.style.display == 'none'){
+    if (window3.style.display == 'none') {
         window3.style.display = 'block';
+        window3.style.zIndex = 6;
     }
 });
 menubtn4.addEventListener('click', () => {
-    if(window4.style.display == 'none'){
+    if (window4.style.display == 'none') {
         window4.style.display = 'block';
+        window4.style.zIndex = 6;
     }
 });
 menubtn5.addEventListener('click', () => {
-    if(window5.style.display == 'none'){
+    if (window5.style.display == 'none') {
         window5.style.display = 'block';
+        window5.style.zIndex = 6;
     }
 });
 menubtn6.addEventListener('click', () => {
-    if(window6.style.display == 'none'){
+    if (window6.style.display == 'none') {
         window6.style.display = 'block';
+        window6.style.zIndex = 6;
     }
 });
 
 //BOTÂO INICIAR
 startbtn.addEventListener('click', () => {
-    if(startmenu.style.display == 'none'){
+    if (startmenu.style.display == 'none') {
         startmenu.style.display = 'block';
-    }else{
+    } else {
         startmenu.style.display = 'none';
     }
-    
+
 });
 
 //MOVIMENTAÇÃO DA JANELA
 windows.forEach(window => {
     let isDragging = false;
     let offsetX, offsetY;
+    
+        
+    
+
 
     window.addEventListener('mousedown', (e) => {
         isDragging = true;
         offsetX = e.clientX - window.getBoundingClientRect().left;
         offsetY = e.clientY - window.getBoundingClientRect().top;
-        window.style.zIndex = 5;
+
+        destaque = window;
     });
 
     window.addEventListener('mousemove', (e) => {
         if (isDragging) {
-        window.style.left = e.clientX - offsetX + 'px';
-        window.style.top = e.clientY - offsetY + 'px';
+            window.style.left = e.clientX - offsetX + 'px';
+            window.style.top = e.clientY - offsetY + 'px';
         }
     });
 
     window.addEventListener('mouseup', () => {
         isDragging = false;
-        window.style.zIndex = 4;
+
     });
     document.body.addEventListener('mouseup', () => {
         isDragging = false;
+        
     });
-    
+    document.body.addEventListener('mousedown', () => {
+        if (window == destaque) {
+            window.style.zIndex = 8;
+        } else {
+            window.style.zIndex = 4;
+        }
+    });
+
 });
