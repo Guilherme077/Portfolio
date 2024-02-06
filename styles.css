@@ -3,6 +3,7 @@ body {
     font-size: 16pt;
     margin: 0;
     padding: 0;
+    
 }
 
 p {
@@ -13,7 +14,7 @@ p {
 div#Titulo {
     text-align: center;
     font-weight: 700;
-    margin-top: 15px;
+    padding-top: 15px;
     margin-bottom: 15px;
     font-size: 42px;
 }
@@ -140,9 +141,168 @@ a {
         
         font-size: 30px;
     }
+    #btnaero{
+        display: none;
+    }
 }
 
 #btnaero{
     color: yellow;
     font-weight: 600;
+    display: auto;
+}
+
+/*Resumo*/
+#resumo{
+    text-align: center;
+    font-size: 30px;
+    margin-inline: 10%;
+}
+#RedesSociais li{
+    display: inline-flex;
+    align-items: center;
+    margin: 15px;    
+}
+#RedesSociais li img{
+    width: 70px;
+    height: 70px;  
+}
+#RedesSociais li a{
+    display: inline-block;
+    color:black;
+    margin: 10px;
+    
+}
+/*Projetos*/
+#projetos{
+    background: rgb(27, 69, 255);
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+#projetos li{
+    display: inline-table;
+    background: rgb(0, 0, 225);
+    width: 250px;
+    height: 300px;
+    margin-top: 10px;
+    margin-inline: 20px;
+    text-align: center;
+    border-radius: 30px;
+    padding: 15px;
+    padding-top: 25px;
+    
+}
+
+#projetos li a{
+    font-size: 25px;
+    
+    
+}
+#projetos li p{
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+/*Formação Academica*/
+#retblue{
+background: rgb(0, 0, 225);
+border-radius: 35px;
+padding-inline: 3%;
+margin-inline: 10%;
+color: white;
+font-size: 28px;
+}
+#retbluetitle{
+    font-weight: 700;
+    font-size: 45px;
+}
+#retbluetime{
+    text-align: right;
+    font-size: 18px;
+}
+/*Certificação*/
+
+#msgpeq{
+    font-size: 15px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+.certificacao{
+    background: rgb(27, 69, 255);
+    margin-bottom: 0;
+    padding-bottom: 15px;
+}
+
+.certificacao ul{
+    text-align: center;
+    padding: 0;
+}
+
+.certificacao ul li{
+    display: inline-block;
+    margin: 25px;
+    width: 250px;
+    list-style: none;
+    
+}
+
+.certificacao ul li img{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin: auto;
+  display: block;
+}
+.certificacao ul li p{
+    font-size: 25px;
+    text-align: center;
+}
+
+
+
+/*Participação*/
+
+#participacao{
+    background: rgb(27, 69, 255);
+    margin-top: 0;
+    padding-bottom: 30px;
+    padding-inline: 5%;
+}
+#participacao h4{
+
+}
+#participacao ul{
+    margin: 0;
+    text-align: center;
+    align-items: center;
+    
+}
+#participacao ul li{
+    display: inline-table;
+    width: 49%;
+    
+}
+#participacao p{
+    margin-bottom: 0;
+}
+
+/*Rodapé*/
+#rodape{
+    
+    padding-top: 25px;
+    padding-bottom: 15px;
+    padding-inline: 15%;
+    font-size: 14px;
+    background: gray;
+    display: inline-block;
+}
+#rodape p{
+    width: 50%;
+    display: inline-block;
+}
+#rodape p#contact{
+    width: 30%;
+    text-align: right;
 }
