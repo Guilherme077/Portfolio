@@ -1,201 +1,219 @@
 /* Reset de estilos para garantir uma base consistente */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-  }
-  
-  body {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    font-family: 'Arial', sans-serif;
-    background-color: #1c1c1c;
-    background-image: url("img/wallpaper.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #fff;
-  }
-  /* Estilo das Janelas*/
-  .window {
-    position: absolute;
-    border: 1px solid #0000004f;
-    border-radius: 6px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    padding: 0px;
-    width: 600px;
-    height: 400px;
-    margin-top: 0px;
-    background: rgb(107,139,180);
-    background: linear-gradient(90deg, rgba(107,139,180,0.8) 0%, rgba(26,81,137,0.8033264331123074) 50%, rgba(107,139,180,0.8) 100%);
-    }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 
-  
-  
-  /* Estilizando os botões de fechar, minimizar e maximizar */
-  .window .title-bar {
-    background-color: #ffffff00;
-    padding: 0px 10px 7px;
-    border: 0px;
-    margin: 0px;
-    cursor: move;
-  }
-  
-  .window .title-bar button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    float: right;
-    margin-left: 5px;
-  }
-  
-  /* Estilizando os botões de fechar, minimizar e maximizar quando passa o mouse */
-  .window .title-bar button:hover {
-    background-color: rgb(129, 129, 129, 0.6); 
-  }
+}
 
-  
-  /* Estilo para os controles da janela (minimizar, maximizar, fechar) */
-  .window .controls {
-    display:inline;
-    align-items: center;
-    padding: 0;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
-    
-  }
-  
-  .window .controls button {
-    background: none;
-    border:#cfcfcf solid 1px;
-    border-radius: 2px;
-    cursor: pointer;
-    margin-right: 0px;
-    margin-left: 0;
-    margin-top: 0;
-    border-top: 0;
-    width: 30px;
-    height: 15px;
-    font-size: 12px;
-    color: #cfcfcf;
-  }
-  /* Botão de fechar janelas*/
-  .window .title-bar .close{
-    background-color: rgba(255, 65, 65, 0.6);
-  }
-  .window .title-bar .close:hover{
-    background-color: rgba(248, 17, 17, 0.729);
-  }
-  /* Estilo da parte branca das janelas*/
-  .window .content{
-    background-color: white;
-    color: #000;
-    height: 365px;
-    margin: 0px 10px 10px;
-    padding: 7px;
-    
-  }
-  
-  /* Adicionando alguns estilos para a barra de status na parte inferior */
-  .status-bar {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(100, 100, 100, 0.401);
-    padding: 12px;
-    text-align: right;
-    display: grid;
-  }
-  /* Hora e data*/
-  .showtime{
-    display: grid;
-    text-align: right;
-    place-items: right;
-  }
-  /* Botão Iniciar*/
-  button#start-btn {
-    position:absolute;
-    display: grid;
-    width: 40px;
-    height: 40px;
-    place-items: left;
-    margin: 0px 10px;
-    margin-bottom: 30px;
-    background-image: url("img/StartBtn.png");
-    background-color: #1d232a00; 
-    border: none;
-  }
-  
-  /*Menu Iniciar*/
-  .start-menu{
-    position: fixed;
-    background-color: rgba(53, 90, 108, 0.779);
-    bottom: 42px;
-    left: 0;
-    width: 410px;
-    z-index: 10;
-    display: none;
-    border-radius: 6px;
-    
-  }
+body {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Arial', sans-serif;
+  background-color: #1c1c1c;
+  background-image: url("img/wallpaper.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
 
-  /* Parte branca do menu iniciar*/
-  .apps-menu{
-    background-color: white;
-    width: 260px;
-    height: 400px;
-    display: inline-block;
-    border-radius: 6px;
-    margin: 10px;
-    padding: 10px;
-    
-  }
-  /* Parte lateral do menu iniciar*/
-  .system-menu{
-    background-color: rgba(226, 0, 0, 0);
-    width: 50px;
-    height: 350px;
-    display: inline-block;
-  }
-  /* Botões da area lateral do menu iniciar*/
-  .menu-btn{
-    background-color: #1d232a00; 
-    border: none;
-    width: 120px;
-    height: 40px;
-    text-align: center;
-    font-size: 15px;
-    color: white;
-    text-align: left;
-    border-radius: 6px;
-    margin-top: 30px;
-  }
-  .menu-btn:hover{
-    background-color: #4f739aaf; 
-    
-  }
-  /* Botões da area interna do menu iniciar*/
-  .app-btn{
-    background-color: #1d232a00; 
-    border: none;
-    height: 40px;
-    text-align: center;
-    font-size: 14px;
-    width: 100%;
-    margin-bottom: 20px;
-    text-align: left;
-    display: flex;
-    align-items: center;
-    
-  }
-  .app-btn:hover{
-    background-color: #e0e0e0;
-  }
-  .menu-btn:hover{
-    background-color: #4f739aaf; 
-    
-  }
- 
+/* Estilo das Janelas*/
+.window {
+  position: absolute;
+  border: 1px solid #0000004f;
+  border-radius: 6px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  padding: 0px;
+  width: 600px;
+  height: 400px;
+  margin-top: 0px;
+  background: rgb(107, 139, 180);
+  background: linear-gradient(90deg, rgba(104, 137, 179, 0.7) 0%, rgba(41, 96, 150, 0.7) 50%, rgba(107, 139, 180, 0.7) 100%);
+}
+
+
+
+/* Estilizando os botões de fechar, minimizar e maximizar */
+.window .title-bar {
+  background-color: #ffffff00;
+  padding: 0px 10px 7px;
+  border: 0px;
+  margin: 0px;
+  cursor: move;
+}
+
+.window .title-bar button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  float: right;
+  margin-left: 5px;
+}
+
+/* Estilizando os botões de fechar, minimizar e maximizar quando passa o mouse */
+.window .title-bar button:hover {
+  background-color: rgb(129, 129, 129, 0.6);
+}
+
+
+/* Estilo para os controles da janela (minimizar, maximizar, fechar) */
+.window .controls {
+  display: inline;
+  align-items: center;
+  padding: 0;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+
+}
+
+.window .controls button {
+  background: none;
+  border: #cfcfcf solid 1px;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 0px;
+  margin-left: 0;
+  margin-top: 0;
+  border-top: 0;
+  width: 30px;
+  height: 15px;
+  font-size: 12px;
+  color: #cfcfcf;
+}
+
+/* Botão de fechar janelas*/
+.window .title-bar .close {
+  background-color: rgba(255, 65, 65, 0.6);
+}
+
+.window .title-bar .close:hover {
+  background-color: rgba(248, 17, 17, 0.729);
+}
+
+/* Estilo da parte branca das janelas*/
+.window .content {
+  background-color: white;
+  color: #000;
+  height: 365px;
+  margin: 0px 10px 10px;
+  padding: 7px;
+
+}
+
+/* Adicionando alguns estilos para a barra de status na parte inferior */
+.status-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(107, 105, 193, 0.219);
+  border-top: 2px solid #1b1b1b60;
+  padding: 12px;
+  text-align: right;
+  display: grid;
+}
+
+/* Hora e data*/
+.showtime {
+  display: grid;
+  text-align: right;
+  place-items: right;
+}
+
+/* Botão Iniciar*/
+button#start-btn {
+  position: absolute;
+  display: grid;
+  width: 40px;
+  height: 40px;
+  place-items: left;
+  margin: 0px 10px;
+  margin-bottom: 30px;
+  background-image: url("img/StartBtn.png");
+  background-color: #1d232a00;
+  border: none;
+}
+
+/*Menu Iniciar*/
+.start-menu {
+  position: fixed;
+  background-color: rgba(53, 90, 108, 0.779);
+  bottom: 44px;
+  left: 0;
+  width: 410px;
+  z-index: 10;
+  display: none;
+  border-radius: 6px;
+
+}
+
+/* Parte branca do menu iniciar*/
+.apps-menu {
+  background-color: white;
+  width: 260px;
+  height: 400px;
+  display: inline-block;
+  border-radius: 6px;
+  margin: 10px;
+  padding: 10px;
+
+}
+
+/* Parte lateral do menu iniciar*/
+.system-menu {
+  background-color: rgba(226, 0, 0, 0);
+  width: 50px;
+  height: 350px;
+  display: inline-block;
+}
+
+/* Botões da area lateral do menu iniciar*/
+.menu-btn {
+  background-color: #1d232a00;
+  border: none;
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+  text-align: left;
+  border-radius: 6px;
+  margin-top: 30px;
+}
+
+.menu-btn:hover {
+  background-color: #4f739aaf;
+
+}
+
+/* Botões da area interna do menu iniciar*/
+.app-btn {
+  background-color: #1d232a00;
+  border: none;
+  height: 40px;
+  text-align: center;
+  font-size: 14px;
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+
+}
+
+.app-btn:hover {
+  background-color: #e0e0e0;
+}
+
+/*Outros*/
+
+#version-info {
+  text-align: right;
+  position: fixed;
+  bottom: 44px;
+  left: 0;
+  width: 100%;
+  display: grid;
+}
