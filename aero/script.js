@@ -19,6 +19,13 @@ const window6 = document.querySelector('#window6');
 const menubtn6 = document.querySelector('#menubtn6');
 var id = null;
 var destaque;
+
+//IMPEDIR MOBILE
+if (screen.width < 1024 || screen.height < 768) {
+    window.location = 'http://guilhermepmoreira.com';
+} 
+
+
 //HORA
 function sysTime() {
     var Data = new Date();
