@@ -135,6 +135,9 @@ button#start-btn {
   background-color: #1d232a00;
   border: none;
 }
+button:hover{
+  cursor: pointer;
+}
 
 /*Menu Iniciar*/
 .start-menu {
