@@ -3,34 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Contagem das férias</title>
+    
 </head>
 <body>
-    <main>
+    <main class="contador">
         <p>Próximo feriado em:</p>
-        <p>00</p>
-        <p>dias e </p>
-        <p>00:00:00</p>
+        <p id="diaFeriado">00</p>
+        <p>dias</p>
     </main>
-    <div>
+    <div class="contador">
         <p>Férias de julho em:</p>
-        <p>00</p>
-        <p>dias e </p>
-        <p>00:00:00</p>
+        <p id="diaJulFerias">00</p>
+        <p>dias</p>
     </div>
-    <div>
+    <div class="contador">
         <p>Fim das aulas em:</p>
-        <p>00</p>
-        <p>dias e </p>
-        <p>00:00:00</p>
+        <p id="diaFerias">00</p>
+        <p>dias</p>
     </div>
-    <div>
-        <p>Hoje é dia:</p>
-        <p>00/00/0000</p>
-        <p>Hoje, quem fica sozinho na aula do curso técnico é:</p>
-        <p>NOME</p>
+    <div id="rodape">
+        <p>Próximo Feriado: 01/05/2024, Dia do Trabalhador.</p>
+        <p>Informações do dia de hoje:</p>
+        <p id="hoje">Erro ao obter informações!</p>
+        <p>©2024 Guilherme Moreira</p>
+        
     </div>
     
-    
+    <script src="script.js"></script>
 </body>
 </html>

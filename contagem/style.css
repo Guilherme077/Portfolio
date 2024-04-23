@@ -1,0 +1,58 @@
+/* Reset de estilos para garantir uma base consistente */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    
+  }
+  
+  body {
+    position: fixed;
+    top: 0;
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+    background-color: #0056c0;
+    color: #fff;
+    
+  }
+
+  .contador {
+    font-size: 20px;
+    border: solid black 10px;
+    border-radius: 15px;
+    text-align: center;
+    justify-content: center;
+    margin-inline: 30%;
+    margin-bottom: 15px;
+  }
+
+  main.contador{
+    font-size: 30px;
+    margin-inline: 20%;
+    border: solid rgb(4, 255, 0) 15px;
+  }
+
+ #diaFeriado{
+    margin: 10px;
+    font-weight: 600;
+    font-size: 40px;
+    color: rgb(244, 255, 83);
+ }
+
+ #rodape {
+    background-color: gray;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 110px; 
+ }
+
+ #rodape p{
+    margin-top: 6px;
+ }
+
+
