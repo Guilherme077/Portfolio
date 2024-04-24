@@ -3,6 +3,7 @@ var txtDF = document.querySelector('#diaFeriado');
 var txtDJF = document.querySelector('#diaJulFerias');
 var txtDFF = document.querySelector('#diaFerias');
 var txtHoje = document.querySelector('#hoje');
+var txtCopyright = document.querySelector('#copyright')
 
 const dataF = new Date("2024-05-01T00:00:00"); // Feriado
 const dataJF = new Date("2024-07-13T00:00:00"); // Jul Ferias
@@ -24,7 +25,13 @@ function updateAll() {
     atualizarContagem(dataFF, txtDFF);
 }
 
+function easterEgg(){
+    window.alert('Que isso filho?');
+}
+
 updateAll();
+txtCopyright.addEventListener('click', easterEgg);
+
 
 // Atualize a contagem a cada segundo
 setInterval(updateAll, 1000);
