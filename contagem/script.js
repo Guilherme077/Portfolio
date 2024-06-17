@@ -5,7 +5,7 @@ var txtDFF = document.querySelector('#diaFerias');
 var txtHoje = document.querySelector('#hoje');
 var txtCopyright = document.querySelector('#copyright')
 
-const dataF = new Date("2024-05-30T00:00:00"); // Feriado
+const dataF = new Date("2024-07-13T00:00:00"); // Feriado
 const dataJF = new Date("2024-07-13T00:00:00"); // Jul Ferias
 const dataFF = new Date("2024-12-07T00:00:00"); // Ferias Finais
 
