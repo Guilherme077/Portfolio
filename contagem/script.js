@@ -22,7 +22,7 @@ function updateAll() {
 }
 
 function easterEgg(){
-    window.alert('Que isso filho?');
+    window.alert('Que isso filho? ');
 }
 
 updateAll();
