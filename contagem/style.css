@@ -12,10 +12,13 @@
     top: 0;
     margin-top: 10px;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     overflow: hidden;
     font-family: 'Arial', sans-serif;
     background-color: #0056c0;
+    background-image: url(img/BG_beach.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
     color: #fff;
     
   }
@@ -30,28 +33,36 @@
     margin-bottom: 15px;
   }
 
-  main.contador{
-    font-size: 30px;
-    margin-inline: 20%;
-    border: solid rgb(4, 255, 0) 15px;
+  main.Numero{
+    font-size: 25px;
+    margin-top: 16%;
+    margin-inline: 5%;
+    text-align: right;
+    
   }
 
  #diaFeriado{
-    margin: 10px;
+    margin: 20px;
+    
     font-weight: 600;
-    font-size: 40px;
-    color: rgb(244, 255, 83);
+    font-size: 140px;
+    color: rgb(255, 255, 255);
+    text-shadow:
+    3px 3px 6px black,
+    0 0 6em rgb(6, 6, 69),
+    0 0 0.5em rgb(4, 4, 85);
  }
 
- #rodape {
-    background-color: gray;
+ .rodape {
+  color: black;
+    background-color: #65a1fc84;
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 110px; 
+    height: 130px; 
  }
 
- #rodape p{
+ .rodape p{
     margin-top: 6px;
  }
 

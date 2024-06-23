@@ -1,12 +1,9 @@
 document.addEventListener('DOMContentLoaded', (event) => {
 var txtDF = document.querySelector('#diaFeriado');
-var txtDJF = document.querySelector('#diaJulFerias');
-var txtDFF = document.querySelector('#diaFerias');
-var txtHoje = document.querySelector('#hoje');
+var txtDFF = document.querySelector('#diasFerias');
 var txtCopyright = document.querySelector('#copyright')
 
 const dataF = new Date("2024-07-13T00:00:00"); // Feriado
-const dataJF = new Date("2024-07-13T00:00:00"); // Jul Ferias
 const dataFF = new Date("2024-12-07T00:00:00"); // Ferias Finais
 
 function atualizarContagem(data, elementoD) {
@@ -16,12 +13,11 @@ function atualizarContagem(data, elementoD) {
     const dias = Math.floor(diferencaTempo / (1000 * 60 * 60 * 24)); //a diferença é dividida por milisegundos, segundos, minutos e horas para se obter o dia
 
     elementoD.innerText = (dias + 1).toString();
-    txtHoje.innerText = dataAtual.toString();
+    
 }
 
 function updateAll() {
     atualizarContagem(dataF, txtDF);
-    atualizarContagem(dataJF, txtDJF);
     atualizarContagem(dataFF, txtDFF);
 }
 
