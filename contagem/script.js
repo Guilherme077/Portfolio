@@ -3,8 +3,8 @@ var txtDF = document.querySelector('#diaFeriado');
 var txtDFF = document.querySelector('#diasFerias');
 var txtCopyright = document.querySelector('#copyright')
 
-const dataF = new Date("2024-07-13T00:00:00"); // Feriado
-const dataFF = new Date("2024-12-07T00:00:00"); // Ferias Finais
+const dataF = new Date("2024-12-07T00:00:00"); // Ferias finais
+const dataFF = new Date("2024-11-15T00:00:00"); // Feriado
 
 function atualizarContagem(data, elementoD) {
     const dataAtual = new Date(); //Obtem o dia atual
